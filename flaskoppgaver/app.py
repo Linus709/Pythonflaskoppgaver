@@ -21,9 +21,10 @@ def red():
 
 @app.route("/data")
 def data():
+    liste = ["erik", "perik", "lise", "pise"]
+
     num = random.random()
-    print(num)
-    return render_template("meddata.html", sendesInn = num)
+    return render_template("meddata.html", sendesInn = liste)
 
 
 

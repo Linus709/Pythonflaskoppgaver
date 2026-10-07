@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    {{ sendesInn }}
+    <ul>
+    {% for element in sendesInn %}
+        <li>{{element   }}</li>
+    {% endfor %}
+</ul>
+
 </body>
 </html>
